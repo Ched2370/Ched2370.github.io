@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+:root {
+  background-color: black;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 15px;
+    font-family: Inconsolata, sans-serif;
+    font-size: 18px;
+}
+
+.titulo {
+  text-decoration: underline;
+  text-align: center;
+  color: greenyellow;
+  margin-bottom: 24px;
+  font-family: 'Gloria Hallelujah', sans-serif;
+}
+
+.enunciado {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  margin: 0px 30px;
+}
+
+#ordenar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  color: black;
+  font-size: 24px;
+  font-family: inconsolata, sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.btn:hover {
+  color: blue;
+  background-color: chartreuse;
+  cursor: pointer;
+}
