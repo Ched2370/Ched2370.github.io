@@ -9,7 +9,7 @@ const lista_menu = document.getElementsByClassName('lista-menu')[0];
 '<li><a href="paginas/formularioContacto.html">Contacto</a></li>';*/
 
 const lista = ['Inicio', 'Calculadora', 'Carrusel', 'Fondos', 'Juego de dados', 'Contacto'];
-const links = ['index.html', "paginas/calculadora.html", "paginas/carrusel.html", "paginas/Fondos.html", "paginas/juegoDeDados.html", "paginas/formularioContacto.html"];
+const links = ['index.html', "paginas/calculadora.html", "paginas/carrusel.html", "paginas/fondos.html", "paginas/juegoDeDados.html", "paginas/formularioContacto.html"];
 const li = document.createElement('li');
 
 links.forEach((link, i) => {
