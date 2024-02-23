@@ -12,7 +12,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  margin-top: 10em;
 }
 
 
@@ -32,12 +31,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0px;
   color: white;
-  width: auto;
   padding: 50px;
-  margin: 0px;
   border: none;
   z-index: 1;
-  height: 100vh;
+  height: 100%;
   width: 5px;
   font-size: 3em;
 }
