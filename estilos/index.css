@@ -1,0 +1,45 @@
+body {
+  background-image: url(../imagenes/fondos/fondo\ principal.jpg);
+}
+
+.cabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.main-estilo {
+  width: 100vw;
+  height: 80vh;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#foco {
+  width: 100vw;
+  font-size: 5rem;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 60px;
+}
+.seccion-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+}
+
+.seccion-principal h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 99px;
+  text-align: center;
+}
+
+
+

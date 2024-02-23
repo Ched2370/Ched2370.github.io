@@ -1,0 +1,43 @@
+:root {
+    background-image: url(../imagenes/fondos/eclipse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.corral {
+    display: grid;
+    grid-template: repeat(3, 1fr), repeat(3, 1fr);
+    grid-template-areas: 
+    "uno . tres"
+    ". cinco ."
+    "siete . nueve";
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+#rojo {
+    background-color: red;
+    grid-area: uno;
+}
+
+#azul {
+    background-color: blue;
+    grid-area: tres;
+}
+
+#verde {
+    background-color: green;
+    grid-area: nueve;
+}
+
+#amarillo {
+    background-color: yellow;
+    grid-area: siete;
+}
+
+#blanco {
+    background-color: white;
+    grid-area: cinco;
+}

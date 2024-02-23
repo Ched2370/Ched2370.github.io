@@ -1,0 +1,47 @@
+body{
+  background-image: url('../imagenes/fondos/1\ \(5\).jpg');
+}
+
+.formulario {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 150px;
+  width: 300px;
+  height: 450px;
+  min-width: 250px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.centrado {
+  margin: 5vh;
+}
+.lista {
+  width: 50%;
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.caja {
+  border-radius: 10px;
+  background-color: antiquewhite;
+  padding: 5px 20px;
+  width: 90%;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.lbl {
+  width: 90%;
+  text-align: start;
+  padding-left: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+#textarea {
+  padding-top: 10px;
+  width: 90%;
+  height: 200px;
+}
+
+
