@@ -1,7 +1,7 @@
 :root {
     background-image: url(../imagenes/fondos/eclipse.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 
@@ -12,8 +12,8 @@
     "uno . tres"
     ". cinco ."
     "siete . nueve";
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     margin: auto;
 }
 
