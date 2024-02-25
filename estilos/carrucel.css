@@ -3,28 +3,16 @@ body {
 }
 
 .imagenes {
-  width: 600px;
-  height: 600px;
+  min-width: 400px;
+  height: 400px;
 }
 
 #carrucel {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-flow: column wrap;
-}
-
-
-#ant{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-#sig {
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  flex-flow: row nowrap;
+  width: 100%;
 }
 
 .btn {
@@ -36,10 +24,11 @@ body {
   z-index: 1;
   height: 100%;
   width: 5px;
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .btn:hover {
   background-color: rgba(100, 100, 100, 0.5);
   color: white;
 }
+

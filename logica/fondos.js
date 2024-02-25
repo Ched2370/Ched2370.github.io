@@ -1,4 +1,5 @@
 const style = document.getElementById('style');
+style.innerHTML = 'body {background-image: url(../imagenes/fondos/eclipse.jpg);}';
 
 function rojo(){
     style.innerHTML = 'body {background-color: red;}';

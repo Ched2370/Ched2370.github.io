@@ -1,149 +1,128 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
 }
 
 :root {
-    background-color: black;
-    min-width: 700px;
+  background-color: black;
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    min-width: 700px;
-    min-height: 500px;
-    
+body {
+  display: grid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 600px;
+  grid-template-rows: auto 1fr auto;
 }
 
 .centrado {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: column nowrap;
-    height: 90vh;
-    position: relative;
-    top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowrap;
+  min-width: 500px;
 }
 
 .conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    position: relative;
-    top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 
-
 .cabecera {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  height: 10vh;
 }
 
 .menu-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row nowrap;
-    height: 5vh;
-    width: 60vw;
-    position: absolute;
-    top: 50px;
-  }
-  
-  .lista-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row nowrap;
-    width: auto;
-    min-width: 600px;
-    border-radius: 200px;
-    background-color: rgba(255, 255, 255, 0.1);
-    z-index: 1;
-  }
-  
-  .lista-menu li {
-    list-style: none;
-    margin: 1em;
-  }
-  
-  .lista-menu li a {
-    text-decoration: none;
-    color: white;
-    padding: 1em;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  height: 5vh;
+}
 
-  .lista-menu li a:hover{
-   color: orangered;
-    background-color: rgba(0, 0, 0, 0.2);
+.lista-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  border-radius: 200px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
+.lista-menu li {
+  list-style: none;
+  padding: 1rem;
+}
 
-  }
+.lista-menu li a {
+  text-decoration: none;
+  font-size: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  color: white;
+  padding: 1rem;
+}
+
+.lista-menu li a:hover {
+  color: orangered;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 .titulo {
-    font-size: 4rem;
-    color: azure;
-    margin-top: 20px;
-    text-decoration: underline;
-    text-align: center;
+  font-size: 4rem;
+  color: azure;
+  margin-top: 20px;
+  text-decoration: underline;
+  text-align: center;
 }
 
 .parrafo {
-    color: coral;
-    padding: 1em;
-    text-align: justify;
+  color: coral;
+  padding: 1em;
+  text-align: justify;
 }
 
 .formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 
 .footer {
-    user-select: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    height: 15vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(2px);
-    color: white;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    min-width: 700px;
+  user-select: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  color: white;
 }
 
 .btn {
-    background-color: cornflowerblue;
-    color: black;
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: cornflowerblue;
+  color: black;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background-color: crimson;
-    color: white;
+  background-color: crimson;
+  color: white;
 }

@@ -8,8 +8,8 @@ const lista_menu = document.getElementsByClassName('lista-menu')[0];
 '<li><a href="juegoDeDados.html">Juego de dados</a></li>' +
 '<li><a href="formularioContacto.html">Contacto</a></li>';*/
 
-const lista = ['Inicio', 'Calculadora', 'Carrusel', 'Fondos', 'Juego de dados', 'Contacto'];
-const links = ['../index.html', "calculadora.html", "carrusel.html", "fondos.html", "juegoDeDados.html", "formularioContacto.html"];
+const lista = ['Inicio', 'Calculadora', 'Carrusel', 'Fondos', 'Dados', 'Contacto'];
+const links = ['../index.html', "calculadora.html", "Carrusel.html", "Fondos.html", "juegoDeDados.html", "formularioContacto.html"];
 const li = document.createElement('li');
 
 links.forEach((link, i) => {

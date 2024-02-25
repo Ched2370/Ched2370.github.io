@@ -1,58 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilos/stylegranel.css" />
+    <link rel="stylesheet" href="../estilos/styleCalculadora.css" />
+    <link rel="icon" href="../imagenes/logo/UGD.png" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>WEB I - G2 - Calculadora</title>
+    <style id="style"></style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../estilos/stylegranel.css" />
-  <link rel="stylesheet" href="../estilos/styleCalculadora.css" />
-  <link rel="icon" href="../imagenes/logo/UGD.png" />
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <title>WEB I - G2 - Calculadora</title>
-  <style id="style"></style>
-</head>
+  <body>
+    <header class="cabecera">
+      <nav class="menu-nav">
+        <ul class="lista-menu"></ul>
+      </nav>
+    </header>
 
-<body>
-  <header class="cabecera">
-
-    <nav class="menu-nav">
-      <ul class="lista-menu"></ul>
-    </nav>
-  </header>
-  <section class="centrado">
-    <div class="conteiner">
-      <div id="calculadora">
-        <ul id="teclas">
-          <p id="display"></p>
-          <li class="tecla" id="cero">0</li>
-          <li class="tecla" id="uno">1</li>
-          <li class="tecla" id="dos">2</li>
-          <li class="tecla" id="tres">3</li>
-          <li class="tecla" id="cuatro">4</li>
-          <li class="tecla" id="cinco">5</li>
-          <li class="tecla" id="seis">6</li>
-          <li class="tecla" id="siete">7</li>
-          <li class="tecla" id="ocho">8</li>
-          <li class="tecla" id="nueve">9</li>
-          <li class="tecla" id="dividir">/</li>
-          <li class="tecla" id="multiplicar">*</li>
-          <li class="tecla" id="restar">-</li>
-          <li class="tecla" id="sumar">+</li>
-          <li class="tecla" id="punto">.</li>
-          <li class="tecla" id="AC">AC</li>
-          <li class="tecla" id="igual">=</li>
-        </ul>
+    <section class="centrado">
+      <div class="conteiner">
+        <div id="calculadora">
+          <ul id="teclas">
+            <p id="display"></p>
+            <li class="tecla" id="cero">0</li>
+            <li class="tecla" id="uno">1</li>
+            <li class="tecla" id="dos">2</li>
+            <li class="tecla" id="tres">3</li>
+            <li class="tecla" id="cuatro">4</li>
+            <li class="tecla" id="cinco">5</li>
+            <li class="tecla" id="seis">6</li>
+            <li class="tecla" id="siete">7</li>
+            <li class="tecla" id="ocho">8</li>
+            <li class="tecla" id="nueve">9</li>
+            <li class="tecla" id="dividir">/</li>
+            <li class="tecla" id="multiplicar">*</li>
+            <li class="tecla" id="restar">-</li>
+            <li class="tecla" id="sumar">+</li>
+            <li class="tecla" id="punto">.</li>
+            <li class="tecla" id="AC">AC</li>
+            <li class="tecla" id="igual">=</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer">
+    </section>
 
+    <footer class="footer"></footer>
+
+    <script src="../logica/logica_calculadora.js"></script>
+    <script src="../logica/menuPagSecundarias.js"></script>
+    <script src="../logica/footer.js"></script>
     
-
-</footer>
-  <script src="../logica/logica_calculadora.js"></script>
-  <script src="../logica/menuPagSecundarias.js"></script>
-  <script src="../logica/footer.js"></script>
-</body>
-
+  </body>
 </html>
