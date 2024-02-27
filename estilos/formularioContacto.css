@@ -2,7 +2,18 @@ body{
   background-image: url('../imagenes/fondos/1\ \(5\).jpg');
 }
 
+.conteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
 .formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
   background-color: rgba(0, 0, 0, 0.5);
   min-width: 150px;
   width: 300px;
@@ -10,6 +21,7 @@ body{
   min-width: 250px;
   border-radius: 20px;
   padding: 20px;
+  margin-right: 100px;
 }
 
 .lista {
@@ -41,4 +53,24 @@ body{
   height: 200px;
 }
 
+#table {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 2px solid black;
+  max-width: 200px;
+  overflow: auto;
+}
+
+#thead tr th{
+  background-color: rgba(150, 150, 150, 0.5);
+  text-align: center;
+  padding: 10px;
+}
+
+#tbody tr td{
+  padding: 10px;
+  max-width: 300px;
+  word-wrap: break-word; /*para que las frases realicen wrap en la tabla*/
+  overflow-wrap: break-word;
+}
 

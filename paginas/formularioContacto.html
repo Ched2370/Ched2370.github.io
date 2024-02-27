@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../estilos/formularioContacto.css" />
     <link rel="stylesheet" href="../estilos/stylegranel.css" />
+    <link rel="stylesheet" href="../estilos/formularioContacto.css" />
     <link rel="icon" href="../imagenes/logo/UGD.png" />
     <title>WEB I - G2 - Contacto</title>
   </head>
@@ -19,13 +19,13 @@
     <section class="centrado">
       <div class="conteiner">
         <form action="" class="formulario">
-          <label for="" class="lbl">Apellido/s</label>
-          <input type="text" name="" class="caja" id="apellido" />
-          <label for="" class="lbl">Nombre/s</label>
-          <input type="tel" name="" class="caja" id="nombre" />
-          <label for="" class="lbl">E-mail</label>
-          <input type="email" name="" class="caja" id="email" />
-          <label for="" class="lbl">Consulta</label>
+          <label for="ape" class="lbl">Apellido/s</label>
+          <input type="text" name="ape" class="caja" id="apellido" />
+          <label for="nnomb" class="lbl">Nombre/s</label>
+          <input type="tel" name="nomb" class="caja" id="nombre" />
+          <label for="mail" class="lbl">E-mail</label>
+          <input type="email" name="mail" class="caja" id="email" />
+          <label for="text" class="lbl">Consulta</label>
           <textarea name="text" class="caja" id="textarea"></textarea>
           <input
             type="button"
@@ -36,9 +36,8 @@
             max="200"
           />
         </form>
-      </div>
-      <div class="conteiner">
-        <table class="table">
+        <table id="table">
+          <thead id="thead"></thead>
           <tbody id="tbody"></tbody>
         </table>
       </div>
