@@ -18,18 +18,26 @@
 
     <section class="centrado">
       <div class="conteiner">
-        <form action="" class="formulario">
-          <label for="ape" class="lbl">Apellido/s</label>
-          <input type="text" name="ape" class="caja" id="apellido" />
-          <label for="nnomb" class="lbl">Nombre/s</label>
-          <input type="tel" name="nomb" class="caja" id="nombre" />
-          <label for="mail" class="lbl">E-mail</label>
-          <input type="email" name="mail" class="caja" id="email" />
-          <label for="text" class="lbl">Consulta</label>
-          <textarea name="text" class="caja" id="textarea"></textarea>
+        <form method="post" action="#" class="formulario" onsubmit='return false'>
+          <label for="ape" class="lbl">
+            Apellido/s
+            <input type="text" name="ape" class="caja" id="apellido" />
+          </label>
+          <label for="nomb" class="lbl">
+            Nombre/s
+            <input type="tel" name="nomb" class="caja" id="nombre" />
+          </label>
+          <label for="mail" class="lbl">
+            E-mail
+            <input type="email" name="mail" class="caja" id="email" />
+          </label>
+          <label for="text" class="lbl">
+            Consulta
+            <textarea name="text" class="caja" id="textarea"></textarea>
+          </label>
           <input
-            type="button"
-            name=""
+            type="submit"
+            name="btnsutmit"
             class="btn"
             id="btnFormulario"
             value="Enviar"
