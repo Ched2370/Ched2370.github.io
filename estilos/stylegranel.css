@@ -25,9 +25,9 @@ body {
   display: grid;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  min-height: 100vh;
-  min-width: 100vw;
+  background-attachment: fixed;
   grid-template-rows: auto 1fr auto;
+  min-width: 500px;
 }
 /* display flex para centrar el section */
 .centrado {
@@ -70,7 +70,7 @@ body {
   align-items: center;
   flex-flow: row nowrap;
   border-radius: 200px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 255, 0.404);
 }
 /* etiqueta li */
 .lista-menu li {
@@ -110,7 +110,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 10vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 89, 255, 0.404);
   backdrop-filter: blur(2px);
   color: white;
   min-width: 100vw;

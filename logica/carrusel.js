@@ -27,14 +27,13 @@ const interv = setInterval(auto, 3000);
 function auto() {
   /* creamos un bloque try catch en caso que surjan errores */
   try {
+    contador ++;
     /* creamos un condicinal if para resetear el contador cada vez que llegue a la longitud del arreglo */
     if (contador >= imagenes.length) {
       contador = 0;
     }
     /* utilizamos el contador como indice para indicar que imagen debe mostrar */
     img.src = imagenes[contador];
-    /* sumamos 1 al contador por cada vuelta */
-    contador ++;
   } catch (err) {
     /*  sacmos un alert x si salta algun error */
     alert('Ha surjido un error ' + err.message);
@@ -44,11 +43,11 @@ function auto() {
 /* creamos la funcion siguiente */
 function siguiente() {
   try {
+    contador ++;
     if (contador >= imagenes.length) {
       contador = 0;
     }
     img.src = imagenes[contador];
-    contador ++;
   } catch (err) {
     alert('Ha surjido un error ' + err.message);
   }
@@ -57,11 +56,11 @@ function siguiente() {
 /* creamos la funcion anterior */
 function anterior() {
   try {
+    contador --;
     if (contador < 0) {
       contador = imagenes.length - 1;
     }
     img.src = imagenes[contador];
-    contador --;
   } catch (err) {
       alert('Ha surjido un error ' + err.message);
   }
