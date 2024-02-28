@@ -81,18 +81,18 @@ body {
 .lista-menu li a {
   text-decoration: none;
   font-size: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 1rem;
 }
 /* hover de etiqueta a */
 .lista-menu li a:hover {
-  color: orangered;
+  color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.2);
 }
 /* clase titulos */
 .titulo {
   font-size: 4rem;
-  color: azure;
+  color: rgb(26, 106, 227);
   margin-top: 20px;
   text-decoration: underline;
   text-align: center;
@@ -112,14 +112,14 @@ body {
   height: 10vh;
   background-color: rgba(0, 89, 255, 0.404);
   backdrop-filter: blur(2px);
-  color: white;
+  color: rgb(255, 255, 255);
   min-width: 100vw;
   position: fixed;
   bottom: 0;
 }
 /* stylo botones generales */
 .btn {
-  background-color: cornflowerblue;
+  background-color: rgb(255, 255, 255);
   color: black;
   width: 150px;
   height: 50px;
@@ -127,9 +127,10 @@ body {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
+  box-shadow: 0 0 1px rgb(251, 251, 251);
 }
 /* estilo hover de botones generales */
 .btn:hover {
-  background-color: crimson;
+  background-color: transparent;
   color: white;
 }
