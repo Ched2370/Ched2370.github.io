@@ -1,14 +1,15 @@
+/* cargamos fondo del body */
 body{
   background-image: url('../imagenes/fondos/1\ \(5\).jpg');
 }
-
+/* cargamos la tabla a un lado del formulario */
 .conteiner {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row nowrap;
 }
-
+/* estilo del formulario */
 .formulario {
   display: flex;
   justify-content: center;
@@ -22,13 +23,7 @@ body{
   padding: 20px;
   margin: 50px;
 }
-
-.lista {
-  width: 50%;
-  margin: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
+/* input text */
 .caja {
   border-radius: 10px;
   background-color: antiquewhite;
@@ -36,7 +31,7 @@ body{
   width: 100%;
   color: black;
 }
-
+/* label */
 .lbl {
   width: 90%;
   text-align: justify;
@@ -46,13 +41,12 @@ body{
   margin-bottom: 10px;
   font-size: 12px;
 }
-
+/* textarea */
 #textarea {
-  padding-top: 10px;
-  height: 200px;
-  resize: none;
+  height: 150px;
+  resize: none; /* eevita que el usuario pueda modificar el tamaño*/
 }
-
+/* tabla */
 #table {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -60,13 +54,13 @@ body{
   max-width: 200px;
   overflow: auto;
 }
-
+/* encabezado de tabla */
 #thead tr th{
   background-color: rgba(150, 150, 150, 0.5);
   text-align: center;
   padding: 10px;
 }
-
+/* cuerpo de tabla */
 #tbody tr td{
   padding: 10px;
   max-width: 300px;

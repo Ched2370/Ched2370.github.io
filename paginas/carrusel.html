@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- estilos generales -->
     <link rel="stylesheet" href="../estilos/stylegranel.css">
+    <!-- estilos de la pagina -->
     <link rel="stylesheet" href="../estilos/carrucel.css">
+    <!-- icono de la pagina -->
     <link rel="icon" href="../imagenes/logo/UGD.png">
     <title>Carrucel</title>
   </head>
   <body>
-
+    <!-- header -->
     <header class="cabecera">
         <nav class="menu-nav">
+          <!-- menu de navegacion, se carga por medio de javascript -->
             <ul class="lista-menu"></ul>
         </nav>
     </header>
-
+    <!-- section -->
     <section class="centrado">
       <div id="carrucel">
           <button class="btn" id="ant">&#10096;</button>
@@ -28,11 +32,13 @@
           <button class="btn" id="sig">&#10097;</button>
         </div>
     </section>
-
+    <!-- footer se carga por medio de javassccript -->
     <footer class="footer"></footer>
-    
+    <!-- carga menu de navegacion -->
     <script src="../logica/menuPagSecundarias.js"></script>
+    <!-- carga la logica del carrucel -->
     <script src="../logica/carrusel.js"></script>
+    <!-- carga el footer -->
     <script src="../logica/footer.js"></script>
 
   </body>

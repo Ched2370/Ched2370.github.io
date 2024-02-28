@@ -1,197 +1,172 @@
-const AC = document.getElementById("AC");
-AC.addEventListener("click", escribirAC);
-const igual = document.getElementById("igual");
-igual.addEventListener("click", calcularValores);
-
+/* llamamos las teclas y le creamos un evenlistener a cada una */
 const display = document.getElementById("display");
+/* se realizaron funciones anonimas para cada tecla */
+const AC = document.getElementById("AC");
+AC.addEventListener("click", () => {
+  try {
+    display.textContent = "";
+  } catch (err) {
+    alert("Ha surjido un error " + err.message);
+  }
+});
+
+const igual = document.getElementById("igual");
+igual.addEventListener("click", () => {
+  try {
+    display.textContent = eval(display.textContent);
+  } catch (err) {
+    alert("Ha surjido un error " + err.message);
+  }
+});
 
 const cero = document.getElementById("cero");
-cero.addEventListener("click", escribirCero);
-const uno = document.getElementById("uno");
-uno.addEventListener("click", escribirUno);
-const dos = document.getElementById("dos");
-dos.addEventListener("click", escribirDos);
-const tres = document.getElementById("tres");
-tres.addEventListener("click", escribirTres);
-const cuatro = document.getElementById("cuatro");
-cuatro.addEventListener("click", escribirCuatro);
-const cinco = document.getElementById("cinco");
-cinco.addEventListener("click", escribirCinco);
-const seis = document.getElementById("seis");
-seis.addEventListener("click", escribirSeis);
-const siete = document.getElementById("siete");
-siete.addEventListener("click", escribirSiete);
-const ocho = document.getElementById("ocho");
-ocho.addEventListener("click", escribirOcho);
-const nueve = document.getElementById("nueve");
-nueve.addEventListener("click", escribirNueve);
-const punto = document.getElementById("punto");
-punto.addEventListener("click", escribirPunto);
-const dividir = document.getElementById("dividir");
-dividir.addEventListener("click", escribirDividir);
-const multiplicar = document.getElementById("multiplicar");
-multiplicar.addEventListener("click", escribirMultiplicar);
-const restar = document.getElementById("restar");
-restar.addEventListener("click", escribirRestar);
-const sumar = document.getElementById("sumar");
-sumar.addEventListener("click", escribirSumar);
-
-patron = /^\d+(\.\d+)?(\s*[-+*/]\s*\d+(\.\d+)?)*$/;
-var num = "";
-var resultado = 0;
-
-/* PARTE PARA ECRIBIR */
-function escribirCero() {
+cero.addEventListener("click", () => {
   try {
-      display.textContent += "0";
-  } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
-  }
+    display.textContent += "0";
+} catch (err) {
+  alert("Ha surjido un error " + err.message);
 }
+});
 
-function escribirUno() {
+const uno = document.getElementById("uno");
+uno.addEventListener("click", () => {
   try {
     display.textContent += "1";
     console.log("1");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirDos() {
+const dos = document.getElementById("dos");
+dos.addEventListener("click", () => {
   try {
     display.textContent += "2";
     console.log("2");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirTres() {
+const tres = document.getElementById("tres");
+tres.addEventListener("click", () => {
   try {
     display.textContent += "3";
     console.log("3");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirCuatro() {
+const cuatro = document.getElementById("cuatro");
+cuatro.addEventListener("click", () => {
   try {
     display.textContent += "4";
     console.log("4");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirCinco() {
+const cinco = document.getElementById("cinco");
+cinco.addEventListener("click", () => {
   try {
     display.textContent += "5";
     console.log("5");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirSeis() {
+const seis = document.getElementById("seis");
+seis.addEventListener("click", () => {
   try {
     display.textContent += "6";
     console.log("6");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirSiete() {
+const siete = document.getElementById("siete");
+siete.addEventListener("click", () => {
   try {
     display.textContent += "7";
     console.log("7");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirOcho() {
+const ocho = document.getElementById("ocho");
+ocho.addEventListener("click", () => {
   try {
     display.textContent += "8";
     console.log("8");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirNueve() {
+const nueve = document.getElementById("nueve");
+nueve.addEventListener("click", () => {
   try {
     display.textContent += "9";
     console.log("9");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirPunto() {
+const punto = document.getElementById("punto");
+punto.addEventListener("click", () => {
   try {
     display.textContent += ".";
     console.log(".");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirDividir() {
+const dividir = document.getElementById("dividir");
+dividir.addEventListener("click", () => {
   try {
     display.textContent += "/";
     console.log(" / ");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirMultiplicar() {
+const multiplicar = document.getElementById("multiplicar");
+multiplicar.addEventListener("click", () => {
   try {
     display.textContent += "*";
     console.log("*");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirRestar() {
+const restar = document.getElementById("restar");
+restar.addEventListener("click", () => {
   try {
     display.textContent += "-";
     console.log("-");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirSumar() {
+const sumar = document.getElementById("sumar");
+sumar.addEventListener("click", () => {
   try {
     display.textContent += "+";
     console.log("+");
   } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
+    alert("Ha surjido un error " + err.message);
   }
-}
+});
 
-function escribirAC() {
-  try {
-    display.textContent = "";
-    console.log("");
-  } catch (err) {
-    swal("ERROR", "ha surjido un error " + err.message, "error");
-  }
-}
 
-/* ARITMETICA */
-function calcularValores() {
-  try {
-    num = display;
-    resultado = eval(num.textContent);
-    console.log(eval(resultado));
-    display.textContent = resultado;
-  } catch (err) {
-    swal("ERROR", "Ha surjido un error " + err.message, "error");
-  }
-}
+

@@ -1,11 +1,8 @@
+/* fondo pagina calculadora */
 body{
   background-image: url('../imagenes/fondos/1\ \(2\).jpg');
 }
-
-.titulo {
-  margin: 30px;
-}
-
+/* contenedor de tecclas ordenamiento por grid */
 #teclas {
   display: grid;
   grid-template: repeat(5, 1fr) repeat(4, 1fr);
@@ -24,7 +21,7 @@ body{
     padding: 15px;
     gap: 10px;
   }
-  
+  /* estilos de teclas */
   .tecla {
   list-style: none;
   background-color: rgba(229, 229, 229);
@@ -39,7 +36,7 @@ body{
   text-align: center;
   justify-content: center;
 }
-
+/* pantalla de calculadora */
 #display {
   grid-area: display;
   overflow: scroll;
@@ -54,77 +51,77 @@ body{
   padding: 10px;
   font-weight: bold;
 }
-
+/* boton AC */
 #AC {
   grid-area: AC;
   background-color: rgba(252, 163, 17);
 }
-
+/* boton 0 */
 #cero {
   grid-area: cero;
 }
-
+/* boton 1 */
 #uno {
   grid-area: uno;
 }
-
+/* boton 2 */
 #dos {
   grid-area: dos;
 }
-
+/* boton 3 */
 #tres {
   grid-area: tres;
 }
-
+/* boton 4 */
 #cuatro {
   grid-area: cuatro;
 }
-
+/* boton 5 */
 #cinco {
   grid-area: cinco;
 }
-
+/* boton 6 */
 #seis {
   grid-area: seis;
 }
-
+/* boton 7 */
 #siete {
   grid-area: siete;
 }
-
+/* boton 8 */
 #ocho {
   grid-area: ocho;
 }
-
+/* boton 9 */
 #nueve {
   grid-area: nueve;
 }
-
+/* boton . */
 #punto {
   grid-area: punto;
 }
-
+/* boton / */
 #dividir {
   grid-area: dividir;
 }
-
+/* boton * */
 #multiplicar {
   grid-area: multiplicar;
 }
-
+/* boton - */
 #restar {
   grid-area: restar;
 }
-
+/* boton + */
 #sumar {
   grid-area: sumar;
 }
-
+/* efecto hover en teclas */
 .tecla:hover {
   background-color: rgb(163, 214, 45);
   color: blue;
 }
-
+/* efecto active en teclas */
 .tecla:active {
   background-color: black;
   color: white;

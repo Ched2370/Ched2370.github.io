@@ -1,17 +1,12 @@
+/* llamamos al nav x su clase y index */
 const lista_menu = document.getElementsByClassName('lista-menu')[0];
-
-/*lista_menu[0].innerHTML = 
-'<li><a href="../index.html">Inicio</a></li>' +
-'<li><a href="calculadora.html">Calculadora</a></li>' +
-'<li><a href="Carrusel.html">Carrucel</a></li>' +
-'<li><a href="Fondos.html">Fondos</a></li>' +
-'<li><a href="juegoDeDados.html">Juego de dados</a></li>' +
-'<li><a href="formularioContacto.html">Contacto</a></li>';*/
-
+/* creamos una arreglo con la lista a navegar */
 const lista = ['Inicio', 'Calculadora', 'Carrusel', 'Fondos', 'Dados', 'Contacto'];
+/* creamos un arreglo con sus ubicaciones */
 const links = ['../index.html', "calculadora.html", "carrusel.html", "fondos.html", "juegoDeDados.html", "formularioContacto.html"];
+/* utilizamos createElement en un variable */
 const li = document.createElement('li');
-
+/* hacemos un foreach para que cree el listado y los agregue al html */
 links.forEach((link, i) => {
     const a = document.createElement('a');
     a.href = link;  

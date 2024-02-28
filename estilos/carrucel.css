@@ -1,12 +1,13 @@
+/* fondo de pagina carrucel */
 body {
   background-image: url(../imagenes/fondos/estrellas.jpg);
 }
-
+/* imagenes */
 .imagenes {
   min-width: 400px;
   height: 400px;
 }
-
+/* etiqueta div contenedora de img y btn */
 #carrucel {
   display: flex;
   justify-content: space-between;
@@ -14,7 +15,7 @@ body {
   flex-flow: row nowrap;
   width: 100%;
 }
-
+/* Los botones son distintos al resto */
 .btn {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0px;
@@ -26,7 +27,7 @@ body {
   width: 5px;
   font-size: 3rem;
 }
-
+/* estilo hover de los botones de pagina carrusel */
 .btn:hover {
   background-color: rgba(100, 100, 100, 0.5);
   color: white;

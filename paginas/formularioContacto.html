@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- carga estilos generales y reseteo -->
     <link rel="stylesheet" href="../estilos/stylegranel.css" />
+    <!-- carga estilos propios de la pagina -->
     <link rel="stylesheet" href="../estilos/formularioContacto.css" />
+    <!-- carga el icono -->
     <link rel="icon" href="../imagenes/logo/UGD.png" />
     <title>WEB I - G2 - Contacto</title>
   </head>
   <body>
-
+    <!-- header -->
     <header class="cabecera">
       <nav class="menu-nav">
         <ul class="lista-menu"></ul>
       </nav>
     </header>
-
+    <!-- section -->
     <section class="centrado">
       <div class="conteiner">
         <form method="post" action="#" class="formulario" onsubmit='return false'>
@@ -44,17 +47,20 @@
             max="200"
           />
         </form>
+        <!-- tabla para cargar datos -->
         <table id="table">
           <thead id="thead"></thead>
           <tbody id="tbody"></tbody>
         </table>
       </div>
     </section>
-
+    <!-- footer -->
     <footer class="footer"></footer>
+    <!-- logica del formulario y tabla -->
     <script src="../logica/formulario.js"></script>
+    <!-- carga menu de navegacion -->
     <script src="../logica/menuPagSecundarias.js"></script>
+    <!-- carga footer -->
     <script src="../logica/footer.js"></script>
-    
   </body>
 </html>

@@ -1,7 +1,8 @@
+/* fondo de pagina index */
 body {
   background-image: url(../imagenes/fondos/fondo\ principal.jpg);
 }
-
+/* tag main */
 .main-estilo {
   width: 100vw;
   display: flex;
@@ -9,7 +10,7 @@ body {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
 }
-
+/* tag section */
 .seccion-principal {
   display: flex;
   text-align: center;
@@ -17,7 +18,7 @@ body {
   align-items: center;
   backdrop-filter: blur(2px);
 }
-
+/* tag H1 */
 #foco {
   user-select: none;
   width: 100vw;
@@ -29,4 +30,40 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+/* --------------para checkear--------------------------- */
+.ver {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#uno {
+  background-color: black;
+}
+
+#dos {
+  background-color: white;
+}
+
+#tres {
+  background-color: black;
+}
+
+.par {
+  color: black;
+}
+
+.parraf {
+  max-width: 40vw;
+  max-height: 30vh;
+  text-align: start;
+  font-size: var(--fs-lg);
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.img {
+  width: 40%;
+}
