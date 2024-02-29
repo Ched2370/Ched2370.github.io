@@ -168,5 +168,10 @@ sumar.addEventListener("click", () => {
   }
 });
 
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.innerHeight < window.innerWidth && window.innerWidth <= 768) {
+      alert('Por favor, gire su dispositivo para una mejor experiencia.');
+  }
+});
 
 

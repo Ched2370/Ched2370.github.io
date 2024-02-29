@@ -1,11 +1,11 @@
 /* fondo de pagina carrucel */
 body {
   background-image: url(../imagenes/fondos/estrellas.jpg);
+  min-height: 768px;
 }
 /* imagenes */
 .imagenes {
-  min-width: 400px;
-  height: 400px;
+  min-width: 250px;
 }
 /* etiqueta div contenedora de img y btn */
 #carrucel {
@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-flow: row nowrap;
-  width: 100%;
+  width: 100vw;
 }
 /* Los botones son distintos al resto */
 .btn {
@@ -33,3 +33,15 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 576px) {
+  .btn {
+    font-size: 1rem;
+    padding: 50px 15px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .imagenes {
+    max-height: 300px;
+  }
+}

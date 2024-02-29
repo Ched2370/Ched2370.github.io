@@ -35,3 +35,10 @@
     background-color: white;
     grid-area: cinco;
 }
+
+@media screen and (max-width: 768px) {
+    .corral {
+        width: 200px;
+        height: 200px;
+    }
+}

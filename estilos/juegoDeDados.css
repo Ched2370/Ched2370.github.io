@@ -21,3 +21,15 @@ body {
   width: 120px;
   margin-top: 50px;
 }
+
+@media screen and (max-width: 576px) {
+  #contenedor {
+    flex-direction: column;
+  }
+  .conteiner {
+    flex-direction: row;
+  }
+  .dados {
+    margin: 10px;
+  }
+}

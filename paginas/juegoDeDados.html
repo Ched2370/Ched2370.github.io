@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../estilos/stylegranel.css" />
     <!-- carga estilos propios de la pagina -->
     <link rel="stylesheet" href="../estilos/juegoDeDados.css" />
+    <!-- @media para menu responsive -->
+    <link rel="stylesheet" href="../estilos/menu_ham.css" />
     <!--  carga icono de la pagina -->
     <link rel="icon" href="../imagenes/logo/UGD.png" />
     <title>WEB I - G2 - Juego de dados</title>
@@ -14,6 +16,13 @@
   <body>
     <!-- header -->
     <header class="cabecera">
+      <div id="cont-ham">
+        <img
+          src="../imagenes/iconos/more_vert_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="ham"
+          id="ham"
+        />
+      </div>
       <nav class="menu-nav">
         <ul class="lista-menu"></ul>
       </nav>
@@ -22,22 +31,43 @@
     <section class="centrado">
       <div class="conteiner">
         <div id="contenedor">
-          <img src="../imagenes/juego de dados/1.JPG" class="dados" id="dado1" alt="dado" />
-          <img src="../imagenes/juego de dados/1.JPG" class="dados" id="dado2" alt="dado" />
-          <img src="../imagenes/juego de dados/1.JPG" class="dados" id="dado3" alt="dado" />
+          <img
+            src="../imagenes/juego de dados/1.JPG"
+            class="dados"
+            id="dado1"
+            alt="dado"
+          />
+          <img
+            src="../imagenes/juego de dados/1.JPG"
+            class="dados"
+            id="dado2"
+            alt="dado"
+          />
+          <img
+            src="../imagenes/juego de dados/1.JPG"
+            class="dados"
+            id="dado3"
+            alt="dado"
+          />
         </div>
-        <input type="button" name="" class="btn" id="tirar" value="Tirar dados" />
+        <input
+          type="button"
+          name=""
+          class="btn"
+          id="tirar"
+          value="Tirar dados"
+        />
       </div>
     </section>
     <!-- footer -->
-    <footer class="footer">
-    </footer>
+    <footer class="footer"></footer>
     <!-- logica de la pagina -->
     <script src="../logica/juegoDeDados.js"></script>
     <!-- carga menu de navegacion -->
     <script src="../logica/menuPagSecundarias.js"></script>
     <!--  carga footer  -->
     <script src="../logica/footer.js"></script>
-    
+    <!-- carga footer -->
+    <script src="../logica/menuHamburSecundario.js"></script>
   </body>
 </html>

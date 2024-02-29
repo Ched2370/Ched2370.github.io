@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../estilos/stylegranel.css" />
     <!-- carga estilos propios de la pagina -->
     <link rel="stylesheet" href="../estilos/formularioContacto.css" />
+    <!-- @media para menu responsive -->
+    <link rel="stylesheet" href="../estilos/menu_ham.css" />
     <!-- carga el icono -->
     <link rel="icon" href="../imagenes/logo/UGD.png" />
     <title>WEB I - G2 - Contacto</title>
@@ -14,6 +16,13 @@
   <body>
     <!-- header -->
     <header class="cabecera">
+      <div id="cont-ham">
+        <img
+          src="../imagenes/iconos/more_vert_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="ham"
+          id="ham"
+        />
+      </div>
       <nav class="menu-nav">
         <ul class="lista-menu"></ul>
       </nav>
@@ -21,7 +30,12 @@
     <!-- section -->
     <section class="centrado">
       <div class="conteiner">
-        <form method="post" action="#" class="formulario" onsubmit='return false'>
+        <form
+          method="post"
+          action="#"
+          class="formulario"
+          onsubmit="return false"
+        >
           <label for="ape" class="lbl">
             Apellido/s
             <input type="text" name="ape" class="caja" id="apellido" />
@@ -61,6 +75,8 @@
     <!-- carga menu de navegacion -->
     <script src="../logica/menuPagSecundarias.js"></script>
     <!-- carga footer -->
+    <script src="../logica/menuHamburSecundario.js"></script>
+    <!-- carga el footer -->
     <script src="../logica/footer.js"></script>
   </body>
 </html>

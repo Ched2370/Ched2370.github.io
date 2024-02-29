@@ -26,8 +26,8 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   background-attachment: fixed;
+  background-position: center;
   grid-template-rows: auto 1fr auto;
-  min-width: 500px;
 }
 /* display flex para centrar el section */
 .centrado {
@@ -49,11 +49,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+  width: 100vw;
   height: 10vh;
   position: fixed;
-  right: 50%;
-  left: 50%;
+  left: 0;
 }
 /* display flex para centrar el nav */
 .menu-nav {
@@ -61,7 +61,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
-  height: 5vh;
+  height: 50px;
+  margin-top: 30px;
+  overflow: hidden;
 }
 /* display flex para centrar ul */
 .lista-menu {
@@ -70,7 +72,7 @@ body {
   align-items: center;
   flex-flow: row nowrap;
   border-radius: 200px;
-  background-color: rgba(0, 0, 255, 0.404);
+  background-color: rgba(78, 78, 250, 0.468);
 }
 /* etiqueta li */
 .lista-menu li {
@@ -80,13 +82,13 @@ body {
 /* Etiqueta a */
 .lista-menu li a {
   text-decoration: none;
-  font-size: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   color: rgb(255, 255, 255);
   padding: 1rem;
+  font-size: var(--fs-md);
 }
 /* hover de etiqueta a */
 .lista-menu li a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(123, 205, 112);
   background-color: rgba(0, 0, 0, 0.2);
 }
 /* clase titulos */
@@ -113,7 +115,7 @@ body {
   background-color: rgba(0, 89, 255, 0.404);
   backdrop-filter: blur(2px);
   color: rgb(255, 255, 255);
-  min-width: 100vw;
+  width: 100vw;
   position: fixed;
   bottom: 0;
 }
@@ -133,4 +135,8 @@ body {
 .btn:hover {
   background-color: transparent;
   color: white;
+}
+
+#ham {
+  display: none;
 }

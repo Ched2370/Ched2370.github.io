@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../estilos/stylegranel.css" />
     <!-- carga estilos propios de la pagina -->
     <link rel="stylesheet" href="../estilos/styleCalculadora.css" />
+    <!-- @media para menu responsive -->
+    <link rel="stylesheet" href="../estilos/menu_ham.css" />
     <!-- carga icono -->
     <link rel="icon" href="../imagenes/logo/UGD.png" />
     <title>WEB I - G2 - Calculadora</title>
@@ -15,6 +17,9 @@
   <body>
     <!-- header -->
     <header class="cabecera">
+      <div id="cont-ham">
+        <img src="../imagenes/iconos/more_vert_FILL0_wght400_GRAD0_opsz24.svg" alt="ham" id="ham">
+      </div>
       <nav class="menu-nav">
         <ul class="lista-menu"></ul>
       </nav>
@@ -54,6 +59,7 @@
     <script src="../logica/menuPagSecundarias.js"></script>
     <!-- carga footer -->
     <script src="../logica/footer.js"></script>
-    
+    <!-- menu hamburguesa -->
+    <script src="../logica/menuHamburSecundario.js"></script>
   </body>
 </html>

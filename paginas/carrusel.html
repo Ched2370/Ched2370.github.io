@@ -4,33 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- estilos generales -->
-    <link rel="stylesheet" href="../estilos/stylegranel.css">
+    <link rel="stylesheet" href="../estilos/stylegranel.css" />
     <!-- estilos de la pagina -->
-    <link rel="stylesheet" href="../estilos/carrucel.css">
+    <link rel="stylesheet" href="../estilos/carrucel.css" />
+    <!-- @media para menu responsive -->
+    <link rel="stylesheet" href="../estilos/menu_ham.css" />
     <!-- icono de la pagina -->
-    <link rel="icon" href="../imagenes/logo/UGD.png">
+    <link rel="icon" href="../imagenes/logo/UGD.png" />
     <title>Carrucel</title>
   </head>
   <body>
     <!-- header -->
     <header class="cabecera">
-        <nav class="menu-nav">
-          <!-- menu de navegacion, se carga por medio de javascript -->
-            <ul class="lista-menu"></ul>
-        </nav>
+      <div id="cont-ham">
+        <img src="../imagenes/iconos/more_vert_FILL0_wght400_GRAD0_opsz24.svg" alt="ham" id="ham">
+      </div>
+      <nav class="menu-nav">
+        <!-- menu de navegacion, se carga por medio de javascript -->
+        <ul class="lista-menu"></ul>
+      </nav>
     </header>
     <!-- section -->
     <section class="centrado">
       <div id="carrucel">
-          <button class="btn" id="ant">&#10096;</button>
-          <img
+        <button class="btn" id="ant">&#10096;</button>
+        <img
           class="imagenes"
           src="../imagenes/carrusel/carru1.png"
           alt="imagenes"
           id="img"
-          />
-          <button class="btn" id="sig">&#10097;</button>
-        </div>
+        />
+        <button class="btn" id="sig">&#10097;</button>
+      </div>
     </section>
     <!-- footer se carga por medio de javassccript -->
     <footer class="footer"></footer>
@@ -40,6 +45,7 @@
     <script src="../logica/carrusel.js"></script>
     <!-- carga el footer -->
     <script src="../logica/footer.js"></script>
-
+    <!-- menu hamburguesa -->
+    <script src="../logica/menuHamburSecundario.js"></script>
   </body>
 </html>

@@ -24,7 +24,7 @@ function validar() {
     /* creamos los patrones de validacion de los campos */
     const patron = /^[a-zA-ZÁÉÍÓÚáéíóúÑñ\s']+$/;
     const patronEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const patronConsulta = /^[a-zA-Z0-9.-_?\s]+$/;
+    const patronConsulta = /^[a-zA-Z0-9.-_?,!\s]+$/;
     /* creamos un arreglo y le cargamos los valores de los campos */
     const datos = [apellido.value, nombre.value, email.value, textarea.value];
     /* console.log(datos);
@@ -79,7 +79,7 @@ function validar() {
         email.insertAdjacentElement("afterend", mail);
       }
       /* en caso que el error sea en consulta */
-      if (!textarea.value || patronConsulta.test(textarea.value)) {
+      if (!textarea.value || !patronConsulta.test(textarea.value)) {
         let text = document.createElement("p");
         text.className = "advertencia";
         text.innerHTML = "agrege su consulta*";
@@ -99,7 +99,7 @@ function agregar(d) {
     /* creamos un condicional, para saber si en la tabla no hay cabecera cree una,
      al cargar la pagina bandera es false, una vez creado el encabezado sera true 
      y no volvera a entrar hasta recargar la pagina*/
-    if (bandera) {
+    if (!bandera) {
       let cabeceraDatos = ["Apellido", "Nombre", "Email", "Mensaje"];
       let fila = document.createElement("tr");
       thead.appendChild(fila);
