@@ -13,7 +13,15 @@ AC.addEventListener("click", () => {
 const igual = document.getElementById("igual");
 igual.addEventListener("click", () => {
   try {
-    display.textContent = eval(display.textContent);
+
+    if (display.textContent == "") {
+
+      alert("No ingresaste una expresión");
+
+    } else {
+      display.textContent = eval(display.textContent);
+    }
+
   } catch (err) {
     alert("Ha surjido un error " + err.message);
   }
@@ -23,9 +31,9 @@ const cero = document.getElementById("cero");
 cero.addEventListener("click", () => {
   try {
     display.textContent += "0";
-} catch (err) {
-  alert("Ha surjido un error " + err.message);
-}
+  } catch (err) {
+    alert("Ha surjido un error " + err.message);
+  }
 });
 
 const uno = document.getElementById("uno");
@@ -131,8 +139,12 @@ punto.addEventListener("click", () => {
 const dividir = document.getElementById("dividir");
 dividir.addEventListener("click", () => {
   try {
-    display.textContent += "/";
-    console.log(" / ");
+    if (display.textContent == "") {
+      display.textContent += "0/";
+    } else {
+      display.textContent += "/";
+      console.log(" / ");
+    }
   } catch (err) {
     alert("Ha surjido un error " + err.message);
   }
@@ -141,8 +153,12 @@ dividir.addEventListener("click", () => {
 const multiplicar = document.getElementById("multiplicar");
 multiplicar.addEventListener("click", () => {
   try {
-    display.textContent += "*";
-    console.log("*");
+    if (display.textContent == "") {
+      display.textContent += "0*"
+    } else {
+      display.textContent += "*";
+      console.log("*");
+    }
   } catch (err) {
     alert("Ha surjido un error " + err.message);
   }
@@ -151,8 +167,12 @@ multiplicar.addEventListener("click", () => {
 const restar = document.getElementById("restar");
 restar.addEventListener("click", () => {
   try {
-    display.textContent += "-";
-    console.log("-");
+    if (display.textContent == "") {
+      display.textContent = "0-"
+    } else {
+      display.textContent += "-";
+      console.log("-");
+    }
   } catch (err) {
     alert("Ha surjido un error " + err.message);
   }
@@ -161,17 +181,14 @@ restar.addEventListener("click", () => {
 const sumar = document.getElementById("sumar");
 sumar.addEventListener("click", () => {
   try {
+    if(display.textContent== ""){
+      display.textContent="0+"
+    }else{
     display.textContent += "+";
     console.log("+");
+    }
   } catch (err) {
     alert("Ha surjido un error " + err.message);
   }
 });
-
-window.addEventListener('DOMContentLoaded', () => {
-  if (window.innerHeight < window.innerWidth && window.innerWidth <= 768) {
-      alert('Por favor, gire su dispositivo para una mejor experiencia.');
-  }
-});
-
 

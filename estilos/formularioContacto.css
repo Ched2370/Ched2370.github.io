@@ -1,6 +1,6 @@
 /* cargamos fondo del body */
-body{
-  background-image: url('../imagenes/fondos/1\ \(5\).jpg');
+body {
+  background-image: url("../imagenes/fondos/1\ \(5\).jpg");
 }
 /* cargamos la tabla a un lado del formulario */
 .conteiner {
@@ -23,27 +23,46 @@ body{
   padding: 20px;
   margin: 30px;
 }
+
+#contenedor_textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
 /* input text */
 .caja {
-  background-color:transparent;
+  background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
-/*   backdrop-filter: blur(20px); */
+  /*   backdrop-filter: blur(20px); */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 5px 10px;
   width: 100%;
   color: #fff;
   border-radius: 20px;
   color: rgb(255, 255, 255);
+  font-size: var(--fs-base);
 }
 /* label */
 .lbl {
-  width: 90%;
+  width: 100%;
   text-align: justify;
   padding-left: 5px;
   color: white;
-  font-size: 18px;
+  font-size: var(--fs-base);
   margin-bottom: 10px;
-  font-size: 12px;
+}
+/* contenedor del text */
+#contenedor_text {
+  width: 100%;
+}
+/* label text area */
+#lbltextarea {
+  width: 100%;
+  padding-left: 0;
+  margin-top: 10px;
 }
 /* textarea */
 #textarea {
@@ -59,25 +78,45 @@ body{
   overflow: auto;
 }
 /* encabezado de tabla */
-#thead tr th{
+#thead tr th {
   background-color: rgba(150, 150, 150, 0.5);
   text-align: center;
   padding: 10px;
 }
 /* cuerpo de tabla */
-#tbody tr td{
+#tbody tr td {
   padding: 10px;
   max-width: 300px;
   word-wrap: break-word; /*para que las frases realicen wrap en la tabla*/
   overflow-wrap: break-word;
 }
 
-@media screen and (max-width: 1200px ) {
+@media screen and (max-width: 1200px) {
   .conteiner {
     display: flex;
     min-height: 100vh;
     justify-content: space-evenly;
     align-items: center;
     flex-flow: column nowrap;
+  }
+}
+
+@media screen and (max-height: 576px) {
+  .formulario {
+    margin-top: 50px;
+    flex-direction: row;
+    width: 500px;
+    height: 250px;
+  }
+  #contenedor_text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 10px;
+  }
+  .btn {
+    width: 100px;
   }
 }

@@ -18,7 +18,7 @@
     <header class="cabecera">
       <div id="cont-ham">
         <img
-          src="../imagenes/iconos/more_vert_FILL0_wght400_GRAD0_opsz24.svg"
+          src="../imagenes/iconos/burger.png"
           alt="ham"
           id="ham"
         />
@@ -36,30 +36,33 @@
           class="formulario"
           onsubmit="return false"
         >
-          <label for="ape" class="lbl">
-            Apellido/s
-            <input type="text" name="ape" class="caja" id="apellido" />
-          </label>
-          <label for="nomb" class="lbl">
-            Nombre/s
-            <input type="tel" name="nomb" class="caja" id="nombre" />
-          </label>
-          <label for="mail" class="lbl">
-            E-mail
-            <input type="email" name="mail" class="caja" id="email" />
-          </label>
-          <label for="text" class="lbl">
-            Consulta
-            <textarea name="text" class="caja" id="textarea"></textarea>
-          </label>
-          <input
+          <div id="contenedor_text">
+            <label for="apellido" class="lbl">   
+             <pre>  Apellido/s</pre>
+              <input type="text" name="ape" class="caja" id="apellido" />
+            </label>
+            <label for="nombre" class="lbl">   
+              <pre>  Nombre/s</pre>
+              <input type="tel" name="nomb" class="caja" id="nombre" />
+            </label>
+            <label for="email" class="lbl">   
+              <pre>  E-mail</pre>
+              <input type="email" name="mail" class="caja" id="email" />
+            </label>
+          </div>
+          <div id="contenedor_textarea">
+            <label for="textarea" class="lbl" id="lbltextarea">
+              <pre>  Consulta</pre>
+              <textarea name="text" class="caja" id="textarea"></textarea>
+            </label>
+            <input
             type="submit"
             name="btnsutmit"
             class="btn"
             id="btnFormulario"
             value="Enviar"
-            max="200"
-          />
+            />
+          </div>
         </form>
         <!-- tabla para cargar datos -->
         <table id="table">
