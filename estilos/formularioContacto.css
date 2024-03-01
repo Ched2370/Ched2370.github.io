@@ -21,7 +21,7 @@ body {
   min-width: 250px;
   border-radius: 20px;
   padding: 20px;
-  margin: 10vh;
+  margin: 10vh 2vh;
 }
 
 #contenedor_textarea {

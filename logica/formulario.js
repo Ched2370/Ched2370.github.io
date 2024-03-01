@@ -10,12 +10,13 @@ const tbody = document.getElementById("tbody");
 var bandera = false;
 /* creamos la funcion validar() */
 
+/* un listener para escuchar los cambios en la window o cuando se carga la pagina */
 window.addEventListener("DOMContentLoaded", cargarTabla);
-
+/* funcion para agregar los datos guardados en localstorage a la tabla */
 function cargarTabla() {
-  const datosGuardados = JSON.parse(localStorage.getItem("datos"));
-  if (datosGuardados) {
-    datosGuardados.forEach((dato) => {
+  const datosG = JSON.parse(localStorage.getItem("datos"));
+  if (datosG) {
+    datosG.forEach((dato) => {
       agregar(dato);
     });
   }
@@ -105,6 +106,8 @@ function validar() {
     alert("¡Ha ocurrido un error!" + err.message);
   }
 }
+
+
 /* creamos la funcion agregar(datos) si paso todos los parametros */
 function agregar(d) {
   try {
@@ -132,9 +135,10 @@ function agregar(d) {
       columna.innerText = d[i];
       fila.appendChild(columna);
     }
-    /* Guardo los datos en localstorage */
+    /* Tomo los datos en localstorage */
     let datosG = JSON.parse(localStorage.getItem("datos")) || [];
     datosG.push(d);
+    /* filtro los datos para que no se generen datos repetidos en el localstorage */
     let datosU = datosG.filter((item, index, array) => {
       for (let i = index + 1; i < array.length; i++) {
         if (JSON.stringify(item) === JSON.stringify(array[i])) {
