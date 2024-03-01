@@ -109,7 +109,7 @@ body {
 .footer {
   user-select: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 10vh;
   background-color: rgba(0, 89, 255, 0.404);
