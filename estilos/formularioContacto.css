@@ -21,7 +21,7 @@ body {
   min-width: 250px;
   border-radius: 20px;
   padding: 20px;
-  margin: 30px;
+  margin: 10vh;
 }
 
 #contenedor_textarea {
@@ -76,6 +76,7 @@ body {
   border: 2px solid black;
   max-width: 200px;
   overflow: auto;
+  margin-bottom: 10vh;
 }
 /* encabezado de tabla */
 #thead tr th {

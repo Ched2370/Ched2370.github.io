@@ -9,6 +9,18 @@ const tbody = document.getElementById("tbody");
 /* creamos una bandera, para saber si la tabla donde se cargaran los datos tiene cabecera */
 var bandera = false;
 /* creamos la funcion validar() */
+
+window.addEventListener("DOMContentLoaded", cargarTabla);
+
+function cargarTabla() {
+  const datosGuardados = JSON.parse(localStorage.getItem("datos"));
+  if (datosGuardados) {
+    datosGuardados.forEach((dato) => {
+      agregar(dato);
+    });
+  }
+}
+
 function validar() {
   try {
     /* eliminamos los elementos de clase advertencia que se crean mas abajo x cada evento de click */
@@ -110,9 +122,8 @@ function agregar(d) {
         bandera = true;
       }
     }
-   /*  console.log("Paso");
+    /*  console.log("Paso");
     console.log(d); */
-
     let fila = document.createElement("tr");
     tbody.appendChild(fila);
     for (let i = 0; i < d.length; i++) {
@@ -121,6 +132,20 @@ function agregar(d) {
       columna.innerText = d[i];
       fila.appendChild(columna);
     }
+    /* Guardo los datos en localstorage */
+    let datosG = JSON.parse(localStorage.getItem("datos")) || [];
+    datosG.push(d);
+    let datosU = datosG.filter((item, index, array) => {
+      for (let i = index + 1; i < array.length; i++) {
+        if (JSON.stringify(item) === JSON.stringify(array[i])) {
+          return false;
+        }
+      }
+      return true;
+    });
+    /* limpio el localstorage */
+    localStorage.clear();
+    localStorage.setItem("datos", JSON.stringify(datosU));
     /* reseteamos los campos */
     apellido.value = "";
     nombre.value = "";
