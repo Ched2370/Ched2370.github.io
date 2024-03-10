@@ -32,7 +32,7 @@ function validar() {
     /* llamomos las tag que vamos a utilizar */
     const apellido = document.getElementById("apellido");
     const nombre = document.getElementById("nombre");
-    const email = document.getElementById("email");
+    const email = document.getElementById("e-mail");
     const textarea = document.getElementById("textarea");
     /* creamos los patrones de validacion de los campos */
     const patron = /^[a-zA-ZÁÉÍÓÚáéíóúÑñ\s']+$/;

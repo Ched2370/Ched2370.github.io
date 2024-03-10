@@ -1,60 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Estilos generales y  reseteo de paginas -->
-    <link rel="stylesheet" href="estilos/stylegranel.css" />
-    <!-- Estilos propios de la pagina -->
-    <link rel="stylesheet" href="estilos/index.css" />
-    <!-- @media para menu responsive -->
-    <link rel="stylesheet" href="estilos/menu_ham.css">
-    <!-- icono -->
-    <link rel="icon" href="../imagenes/logo/UGD.png" />
-    <title>UGD - G2 - Principal</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="../img/iconos/Logo_hormiga.png" />
+    <title>Porfolio de Mario Martin Ibañez</title>
   </head>
   <body>
-    <!-- header -->
-    <header class="cabecera">
-      <div id="cont-ham">
-        <img src="../imagenes/iconos/burger.png" alt="ham" id="ham">
-      </div>
-      <nav class="menu-nav">
-        <ul class="lista-menu">
-          <!-- EL menu de navegacion se carga desde JavaScript -->
-        </ul>
-      </nav>
-    </header>
-    <!-- section para el centrado -->
-    <section class="centrado">  
-      <main class="main-estilo">
-        <div class="seccion-principal">
-          <h1 id="foco">Trabajo integrador - WEB I - Equipo 2</h1>
+    <nav class="navegacion">
+    </nav>
+    <section class="conteiner" id="sobre_mi">
+      <h2 class="titulo">Hola, soy Mario</h2>
+      <img src="img/foto/marioIbz.png" alt="foto de mario" id="logo_central">
+    </section>
+    <section class="conteiner">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <a href="https://github.com/joselesc/Vacunacion-g9?tab=readme-ov-file" target="_blank">
+              <img src="img/img_proyectos/Proyecto_java_argProg.png" class="card-img-top obj" alt="Proyecto Java">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Primer proyecto grupal en Java</h5>
+              <p class="card-text">Realizado junto a </p>
+              <button type="button" class="btn btn-primary disabled">Java</button>
+              <button type="button" class="btn btn-primary disabled">Java Swing</button>
+              <button type="button" class="btn btn-primary disabled">JDBC</button>
+            </div>
+          </div>
         </div>
-      </main>
+        <div class="col">
+          <div class="card">
+            <a href="html/Trabajo_integrador_WEB_I_UGD/index.html" target="_blank">
+              <img src="img/img_proyectos/proyecto_web_I.JPG" class="card-img-top obj" alt="Proyecto web I">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Primer proyecto grupal en web</h5>
+              <p class="card-text">Realizado como trabajo integrador en la materia WEB I, para la tecnicatura en desaarrollo de software</p>
+              <button type="button" class="btn btn-primary disabled">html</button>
+              <button type="button" class="btn btn-primary disabled">css</button>
+              <button type="button" class="btn btn-primary disabled">JavaScript</button>
+            </div>
+          </div>
+        </div>
     </section>
-    <section class="ver" id="uno">
-      <p class="parraf impar">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptas sed quae qui nobis. Voluptas voluptatibus mollitia amet magni qui dicta rem! Incidunt doloremque sit eius, maxime officiis magni. Natus temporibus consequuntur rerum voluptatibus fugit, aspernatur facere. Odit odio culpa necessitatibus blanditiis ipsa porro, rem cum repellat voluptates ut non est, totam ducimus asperiores laborum eligendi minus distinctio ipsam velit?</p>
-      <img src="imagenes/index/imagenHTML_CSS_JS.svg" alt="html, css, javasccript" id="hcj" class="img">
-    </section>
-    <section class="ver" id="dos">
-      <img src="imagenes/index/diseño.svg" alt="diseño" id="diseño" class="img">
-      <p class="parraf par">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptas sed quae qui nobis. Voluptas voluptatibus mollitia amet magni qui dicta rem! Incidunt doloremque sit eius, maxime officiis magni. Natus temporibus consequuntur rerum voluptatibus fugit, aspernatur facere. Odit odio culpa necessitatibus blanditiis ipsa porro, rem cum repellat voluptates ut non est, totam ducimus asperiores laborum eligendi minus distinctio ipsam velit?</p>
-    </section>
-    <section class="ver" id="tres">
-      <p class="parraf impar">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptas sed quae qui nobis. Voluptas voluptatibus mollitia amet magni qui dicta rem! Incidunt doloremque sit eius, maxime officiis magni. Natus temporibus consequuntur rerum voluptatibus fugit, aspernatur facere. Odit odio culpa necessitatibus blanditiis ipsa porro, rem cum repellat voluptates ut non est, totam ducimus asperiores laborum eligendi minus distinctio ipsam velit?</p>
-      <img src="imagenes/index/proyecto.svg" alt="proyecto" id="proyecto" class="img">
-    </section>
-    <!-- footer -->
-    <footer class="footer">
-      <!-- El footer se carga desde JavaScript -->
+    <footer>
+
     </footer>
-    <!-- carga el menu de navegacion -->
-    <script src="logica/menu.js"></script>
-    <!-- carga footer -->
-    <script src="logica/footer.js"></script>
-    <!-- menu hamburguesa -->
-    <script src="logica/menuHambur.js"></script>
-    
+   <!--  <script src="main.js"></script> -->
   </body>
 </html>
