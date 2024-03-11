@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="../img/iconos/Logo_hormiga.png" />
     <title>Porfolio de Mario Martin Ibañez</title>
@@ -11,17 +12,21 @@
   <body>
   
     <section class="conteiner" id="portada">
-        <img src="img/foto/marioIbz.png" alt="foto de mario" id="logo_central" class="animate__animated animate__backInLeft animate__delay-1s">
-      <h2 class="titulo animate__animated animate__backInRight animate__delay-2s" id="tituloP">Hola, soy Mario</h2>
+        <img src="img/foto/marioIbz.png" alt="foto de mario" id="logo_central" data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="3000">
+      <h2 class="titulo" id="tituloP" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="3000">Hola, soy Mario</h2>
     </section>
 
     <!-- section about me -->
     <section class="conteiner" id="sobre_mi">
-      <h2 class="titulo" id="tituloSM">Sobre mi</h2>
-      <p class="parrafo">Estudiante de desarrollo de software en la Universidad Gaston Dachary. He completado el programa 'Argentina Programa 4.0', donde adquirí habilidades en Java y base de datos relacionales, actualmente estoy ampliando mis conocimientos en el programa 'Codo a Codo'.</p>
-      <p class="parrafo">Además de mis estudios formales, también estoy explorando otros aspectos del desarrollo de software. Tengo conocimientos básicos en HTML, CSS, JavaScript, Git y GitHub, y estoy emocionado por seguir aprendiendo y creciendo en este campo.</p>
-      <p class="parrafo">Estoy comprometido con mi crecimiento personal y profesional, y siempre estoy buscando oportunidades para mejorar mis habilidades y contribuir al mundo del desarrollo de software.</p>
-      <p class="parrafo">¡Gracias por visitar mi portfolio y espero poder compartir mi viaje de aprendizaje contigo!</p>
+      <h2 class="titulo" id="tituloSM" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="3000">Sobre mi</h2>
+      <p class="parrafo" data-aos="fade-right" data-aos-easing="linear"
+      data-aos-duration="3000">Estudiante de desarrollo de software en la Universidad Gaston Dachary. He completado el programa 'Argentina Programa 4.0', donde adquirí habilidades en Java y base de datos relacionales, actualmente estoy ampliando mis conocimientos en el programa 'Codo a Codo'.</p>
+      <p class="parrafo" data-aos="fade-left" data-aos-easing="linear"
+      data-aos-duration="3000">Además de mis estudios formales, también estoy explorando otros aspectos del desarrollo de software. Tengo conocimientos básicos en HTML, CSS, JavaScript, Git y GitHub, y estoy emocionado por seguir aprendiendo y creciendo en este campo.</p>
+      <p class="parrafo" data-aos="fade-right" data-aos-easing="linear"
+      data-aos-duration="3000">Estoy comprometido con mi crecimiento personal y profesional, y siempre estoy buscando oportunidades para mejorar mis habilidades y contribuir al mundo del desarrollo de software.</p>
+      <p class="parrafo" data-aos="fade-left"data-aos-easing="linear"
+      data-aos-duration="3000">¡Gracias por visitar mi portfolio y espero poder compartir mi viaje de aprendizaje contigo!</p>
     </section>
     <!-- section proyectos -->
     <section class="conteiner" id="proyectos">
@@ -64,12 +69,12 @@
     <section class="conteiner">
       <h2 class="titulo">Habilidades</h2>
       <ul id="list-habilidades">
-        <li><img class="habilidades" id="html" src="img/iconos/html.gif" alt=""></li>
-        <li><img class="habilidades" id="css" src="img/iconos/css.gif" alt=""></li>
-        <li><img class="habilidades" id="js" src="img/iconos/javascript.webp" alt=""></li>
-        <li><img class="habilidades" id="git" src="img/iconos/git.gif" alt=""></li>
-        <li><img class="habilidades animate__animated animate__fadeInUp" id="github" src="img/iconos/github.gif" alt=""></li>
-        <li><img class="habilidades" id="bstrap" src="img/iconos/bootstrap.gif" alt=""></li>
+        <li><img class="habilidades" id="html" src="img/iconos/html.gif" alt="" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1000"></li>
+        <li><img class="habilidades" id="css" src="img/iconos/css.gif" alt="" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="2000"></li>
+        <li><img class="habilidades" id="js" src="img/iconos/javascript.webp" alt="" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="3000"></li>
+        <li><img class="habilidades" id="git" src="img/iconos/git.gif" alt="" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1000"></li>
+        <li><img class="habilidades" id="github" src="img/iconos/github.gif" alt="" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="2000"></li>
+        <li><img class="habilidades" id="bstrap" src="img/iconos/bootstrap.gif" alt="" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="3000"></li>
       </ul>
     </section>
     <!-- footer de contacto -->
@@ -77,5 +82,6 @@
 
   </footer>
   <script src="js/main.js"></script>
+
   </body>
 </html>
