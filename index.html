@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="../img/iconos/Logo_hormiga.png" />
     <title>Porfolio de Mario Martin Ibañez</title>
   </head>
   <body>
-    <nav id="navegacion">
-    </nav>
-    <section class="conteiner" id="sobre_mi">
-      <h2 class="titulo">Hola, soy Mario</h2>
-      <div class="conteiner-flex-r">
-        <img src="img/foto/marioIbz.png" alt="foto de mario" id="logo_central">
-      </div>
+  
+    <section class="conteiner" id="portada">
+        <img src="img/foto/marioIbz.png" alt="foto de mario" id="logo_central" class="animate__animated animate__backInLeft animate__delay-1s">
+      <h2 class="titulo animate__animated animate__backInRight animate__delay-2s" id="tituloP">Hola, soy Mario</h2>
     </section>
-    <section class="conteiner">
-      <p class="parrafo overflow-y-auto">Un estudiante de desarrollo de software en la Universidad Gaston Dachary. He completado el programa 'Argentina Programa 4.0', donde adquirí habilidades en Java y actualmente estoy ampliando mis conocimientos en el programa 'Codo a Codo'. <br>
 
-        Además de mis estudios formales, también estoy explorando otros aspectos del desarrollo de software. Tengo conocimientos básicos en HTML, CSS, JavaScript, Git y GitHub, y estoy emocionado por seguir aprendiendo y creciendo en este campo. <br>
-        
-        Estoy comprometido con mi crecimiento personal y profesional, y siempre estoy buscando oportunidades para mejorar mis habilidades y contribuir al mundo del desarrollo de software. <br>
-        
-        ¡Gracias por visitar mi portfolio y espero poder compartir mi viaje de aprendizaje contigo!</p>
-        <p></p>
+    <!-- section about me -->
+    <section class="conteiner" id="sobre_mi">
+      <h2 class="titulo" id="tituloSM">Sobre mi</h2>
+      <p class="parrafo">Estudiante de desarrollo de software en la Universidad Gaston Dachary. He completado el programa 'Argentina Programa 4.0', donde adquirí habilidades en Java y base de datos relacionales, actualmente estoy ampliando mis conocimientos en el programa 'Codo a Codo'.</p>
+      <p class="parrafo">Además de mis estudios formales, también estoy explorando otros aspectos del desarrollo de software. Tengo conocimientos básicos en HTML, CSS, JavaScript, Git y GitHub, y estoy emocionado por seguir aprendiendo y creciendo en este campo.</p>
+      <p class="parrafo">Estoy comprometido con mi crecimiento personal y profesional, y siempre estoy buscando oportunidades para mejorar mis habilidades y contribuir al mundo del desarrollo de software.</p>
+      <p class="parrafo">¡Gracias por visitar mi portfolio y espero poder compartir mi viaje de aprendizaje contigo!</p>
     </section>
-    <section class="conteiner">
-      <h2 class="titulo">Proyectos</h2>
+    <!-- section proyectos -->
+    <section class="conteiner" id="proyectos">
+      <h2 class="titulo animate__backInLeft">Proyectos</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
@@ -63,9 +61,21 @@
           </div>
         </div>
     </section>
-    <footer>
+    <section class="conteiner">
+      <h2 class="titulo">Habilidades</h2>
+      <ul id="list-habilidades">
+        <li><img class="habilidades" id="html" src="img/iconos/html.gif" alt=""></li>
+        <li><img class="habilidades" id="css" src="img/iconos/css.gif" alt=""></li>
+        <li><img class="habilidades" id="js" src="img/iconos/javascript.webp" alt=""></li>
+        <li><img class="habilidades" id="git" src="img/iconos/git.gif" alt=""></li>
+        <li><img class="habilidades animate__animated animate__fadeInUp" id="github" src="img/iconos/github.gif" alt=""></li>
+        <li><img class="habilidades" id="bstrap" src="img/iconos/bootstrap.gif" alt=""></li>
+      </ul>
+    </section>
+    <!-- footer de contacto -->
+  <footer>
 
-    </footer>
-   <!--  <script src="main.js"></script> -->
+  </footer>
+  <script src="js/main.js"></script>
   </body>
 </html>
