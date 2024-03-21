@@ -1,4 +1,3 @@
-@import url(normalize.css);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
 
 :root {
@@ -12,24 +11,96 @@
 }
 
 body {
-  background: #0f0c29; /* fallback for old browsers */
+  background: #232526; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to left,
-    #24243e,
-    #302b63,
-    #0f0c29
+    to right,
+    #414345,
+    #232526
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to left,
-    #24243e,
-    #302b63,
-    #0f0c29
+    to right,
+    #414345,
+    #232526
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   min-width: 260px;
 }
 
+.encabezado {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37ff8b;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-base);
+  font-family: "Arial";
+  position: relative;
+  top: 20px;
+  right: 20px;
+  float: right;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
 
 .conteiner {
+  /*  width: 100%;
+  height: 100%;
+  --s: 200px; /* control the size
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+ */
   min-width: 90vw;
   min-height: 100vh;
   padding: 30px;
@@ -43,7 +114,7 @@ body {
   text-align: center;
   color: blanchedalmond;
   font-size: var(--fs-xxl);
-  
+  text-shadow: 4px 8px 2px rgba(0, 0, 0, 0.6);
 }
 
 .parrafo {
@@ -53,12 +124,14 @@ body {
   max-width: 90%;
 }
 
-
 #logo_central {
-  border-radius: 50%;
+  border-radius: 71% 29% 83% 17% / 47% 49% 51% 53%;
   width: 15rem;
   height: 25rem;
   object-fit: contain;
+  box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 .btn {
@@ -70,9 +143,9 @@ body {
 #list-habilidades {
   display: grid;
   grid-template: repeat(2, 1fr) repeat(3, 1fr);
-  grid-template-areas: 
-  'html css js'
-  'git github bstrap';
+  grid-template-areas:
+    "html css js"
+    "git github bstrap";
   gap: 50px;
   background-color: aliceblue;
   border-radius: 24px;
@@ -111,13 +184,25 @@ li {
   width: 150px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .parrafo {
     font-size: var(--fs-md);
   }
+  #list-habilidades {
+    display: grid;
+    grid-template: repeat(3, 1fr) repeat(2, 1fr);
+    grid-template-areas:
+      "html css"
+      "js git"
+      "github bstrap";
+    gap: 30px;
+  }
+  .habilidades {
+    width: 100px;
+  }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
   .parrafo {
     font-size: var(--fs-sm);
   }
