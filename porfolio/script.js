@@ -45,7 +45,7 @@ function verCV() {
 
 /*traigo los proyectos*/
 const galeria = document.querySelector('.galeria');
-fetch('./proyectos.json')
+fetch('./asset/proyectos.json')
   .then((response) => response.json())
   .then((data) => {
     const proyect = data.reverse();
