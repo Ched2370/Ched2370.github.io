@@ -1,17 +1,190 @@
 [
   {
     "id": 1,
-    "title": "vacunatorio",
-    "img": "",
+    "title": "Vacunatorio",
+    "institucion": "Universidad de la punta - argentina programa 4.0",
+    "img": "https://github.com/Ched2370/imagenes/blob/main/vacunatorio/vacunatorio.PNG?raw=true",
     "colaboradores": [
       {
         "nombre": "",
         "apellido": "",
         "github": ""
+      },
+      {
+        "nombre": "",
+        "apellido": "",
+        "github": ""
+      },
+      {
+        "nombre": "Mario",
+        "apellido": "Ibañez",
+        "github": "https://github.com/Ched2370"
       }
     ],
+    "tecnologias": [
+      "Java",
+      "MySQl"
+    ],
+    "tipo": "Aplicacion de Escritorio",
     "linkRepositorio": "",
     "web": "",
+    "descripcion": "Primer proyecto grupal de una aplicación de escritorio para el registro y control de la vacunación contra el COVID-19. Desarrollada en Java con MySQL, utilizando Swing para la interfaz gráfica y JDBC para la gestión de la base de datos. La aplicación permite administrar información de pacientes y centros de vacunación. Además, se emplearon Git y GitHub para la colaboración y el control de versiones."
+  },
+  {
+    "id": 2,
+    "title": "Integrador Web I",
+    "institucion": "Universidad Gaston Dachary - Web I - Tecnicatura en desarrollo de software",
+    "img": "https://github.com/Ched2370/imagenes/blob/main/tp_01_web_I/trabajo_practico_integrador_web_I.PNG?raw=true",
+    "colaboradores": [
+      {
+        "nombre": "Jonathan",
+        "apellido": "Remon",
+        "github": ""
+      },
+      {
+        "nombre": "Rocio",
+        "apellido": "Ledesma",
+        "github": ""
+      },
+      {
+        "nombre": "Mario",
+        "apellido": "Ibañez",
+        "github": "https://github.com/Ched2370"
+      }
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tipo": "Simple Page Application",
+    "linkRepositorio": "https://github.com/Ched2370/tp_integrador_web_I",
+    "web": "https://integrador-web1.netlify.app/",
+    "descripcion": ""
+  },
+  {
+    "id": 3,
+    "title": "Integrador frond-end",
+    "institucion": "Aprendisaje a lo largo de la vida - Codo a codo",
+    "img": "https://github.com/Ched2370/imagenes/blob/main/Integrador_I-Desarrollo_App_Web/Integrador_I.PNG?raw=true",
+    "colaboradores": [
+      {
+        "nombre": "Maicol",
+        "apellido": "Perez",
+        "github": "https://github.com/Nhay2008"
+      },
+      {
+        "nombre": "Guillermo",
+        "apellido": "Paz Rodriguez",
+        "github": ""
+      },
+      {
+        "nombre": "Veronica",
+        "apellido": "Franco",
+        "github": ""
+      },
+      {
+        "nombre": "Mario",
+        "apellido": "Ibañez",
+        "github": "https://github.com/Ched2370"
+      }
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tipo": "Simple Page Application",
+    "linkRepositorio": "https://github.com/Ched2370/tp_frondEnd_CaC",
+    "web": "https://juego-amigo-secreto-alura.netlify.app/",
+    "descripcion": ""
+  },
+  {
+    "id": 3,
+    "title": "Integrador I - Desarrollo de aplicaciones Web",
+    "institucion": "Universidad Gaston Dachary - Web I - Tecnicatura en desarrollo de software",
+    "img": "https://github.com/Ched2370/imagenes/blob/main/Integrador_I-Desarrollo_App_Web/Integrador_I.PNG?raw=true",
+    "colaboradores": [
+      {
+        "nombre": "Mario",
+        "apellido": "Ibañez",
+        "github": "https://github.com/Ched2370"
+      }
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tipo": "Simple Page Application",
+    "linkRepositorio": "https://github.com/Ched2370/tp_integrador_01_DAW",
+    "web": "https://juego-amigo-secreto-alura.netlify.app/",
+    "descripcion": ""
+  },
+  {
+    "id": 3,
+    "title": "Integrador I - Desarrollo de aplicaciones Web",
+    "institucion": "Universidad Gaston Dachary - Web I - Tecnicatura en desarrollo de software",
+    "img": "https://github.com/Ched2370/imagenes/blob/main/Integrador_I-Desarrollo_App_Web/Integrador_I.PNG?raw=true",
+    "colaboradores": [
+      {
+        "nombre": "Mario",
+        "apellido": "Ibañez",
+        "github": "https://github.com/Ched2370"
+      }
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tipo": "Simple Page Application",
+    "linkRepositorio": "https://github.com/Ched2370/tp_integrador_01_DAW",
+    "web": "https://juego-amigo-secreto-alura.netlify.app/",
+    "descripcion": ""
+  },
+  {
+    "id": 3,
+    "title": "Integrador I - Desarrollo de aplicaciones Web",
+    "institucion": "Universidad Gaston Dachary - Web I - Tecnicatura en desarrollo de software",
+    "img": "https://github.com/Ched2370/imagenes/blob/main/Integrador_I-Desarrollo_App_Web/Integrador_I.PNG?raw=true",
+    "colaboradores": [
+      {
+        "nombre": "Mario",
+        "apellido": "Ibañez",
+        "github": "https://github.com/Ched2370"
+      }
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tipo": "Simple Page Application",
+    "linkRepositorio": "https://github.com/Ched2370/tp_integrador_01_DAW",
+    "web": "https://juego-amigo-secreto-alura.netlify.app/",
+    "descripcion": ""
+  },
+  {
+    "id": 4,
+    "title": "Amigo Secreto - Chalenger 1 Alura",
+    "institucion": "Alura - One Oracle Next Education - G8",
+    "img": "https://github.com/Ched2370/imagenes/blob/main/amigo_secreto/amigo-secreto.PNG?raw=true",
+    "colaboradores": [
+      {
+        "nombre": "Mario",
+        "apellido": "Ibañez",
+        "github": "https://github.com/Ched2370"
+      }
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tipo": "Simple Page Application",
+    "linkRepositorio": "https://github.com/Ched2370/Challengers_amigo_secreto",
+    "web": "https://juego-amigo-secreto-alura.netlify.app/",
     "descripcion": ""
   }
 ]

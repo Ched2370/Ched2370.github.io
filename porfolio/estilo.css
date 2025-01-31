@@ -196,7 +196,7 @@ html {
   font-size: 30px;
   margin-bottom: 10px;
 }
-.sobremi button {
+.sobremi .button {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #fff;
@@ -209,7 +209,7 @@ html {
   position: relative;
   z-index: 10;
 }
-.sobremi button .overlay {
+.sobremi .button .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -219,7 +219,7 @@ html {
   z-index: -1;
   transition: 1s;
 }
-.sobremi button:hover .overlay {
+.sobremi .button:hover .overlay {
   width: 100%;
 }
 /* SECCION S K I L L S */
@@ -609,7 +609,7 @@ html {
   color: #fff;
   font-size: 18px;
 }
-.contacto button {
+.contacto .button {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #fff;
@@ -622,7 +622,7 @@ html {
   position: relative;
   z-index: 10;
 }
-.contacto button .overlay {
+.contacto .button .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -632,7 +632,7 @@ html {
   z-index: -1;
   transition: 1s;
 }
-.contacto button:hover .overlay {
+.contacto .button:hover .overlay {
   width: 100%;
 }
 .contacto .col img {

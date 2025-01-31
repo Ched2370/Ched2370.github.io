@@ -39,29 +39,33 @@ function seleccionar() {
   efectoHabilidades();
 }; */
 
-const container = document.querySelector('.container');
-for (let i = 0; i < 100; i++) {
-  const blocks = document.createElement('div');
-  blocks.classList.add('block');
-  container.appendChild(blocks);
+function verCV() {
+  window.open('ruta/del/cv.pdf', '_blank');
 }
 
-function animeteBlocks() {
-  anime({
-    targets: '.block',
-    translateX: function () {
-      return anime.random(-700, 700);
-    },
-    translateY: function () {
-      return anime.random(-500, 500);
-    },
-    scale: function () {
-      return anime.random(1, 5);
-    },
-    easing: 'linear',
-    duration: 4000,
-    delay: anime.stagger(10),
-    loopComplete: animeteBlocks,
-  });
-}
-animeteBlocks();
+/*traigo los proyectos*/
+const galeria = document.querySelector('.galeria');
+fetch('./proyectos.json')
+  .then((response) => response.json())
+  .then((data) => {
+    const proyect = data.reverse();
+
+    proyect.forEach((element) => {
+      const proyecto = document.createElement('div');
+      proyecto.classList = 'proyecto';
+      const img = document.createElement('img');
+      img.src = element.img;
+      const overlay = document.createElement('div');
+      overlay.classList = 'overlay';
+      const titulo = document.createElement('h3');
+      titulo.textContent = element.title;
+      const parrafo = document.createElement('p');
+      //parrafo.textContent = element.descripcion;
+      overlay.appendChild(titulo);
+      overlay.appendChild(parrafo);
+      proyecto.appendChild(img);
+      proyecto.appendChild(overlay);
+      galeria.appendChild(proyecto);
+    });
+  })
+  .catch((error) => console.log(error));
